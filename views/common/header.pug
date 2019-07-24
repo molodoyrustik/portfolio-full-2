@@ -1,0 +1,28 @@
+section.section.hero
+  .hero__top
+    .socials
+      ul.socials__list.hero__socials
+        each item in [{name: 'vkontakte', width: '31', height: '17'}, {name: 'github', width: '26', height: '22'}, {name: 'instagram', width: '24', height: '22'}]
+          li.socials__item
+            a(href="#" class=` socials__link socials__link--${item.name}`)
+              span.socials__text= item.name
+              svg.icon.hero__socials-icon(width=`${item.width}` height=`${item.height}`)
+                use(xlink:href=`#${item.name}`)
+    button#humburger.menu-button
+      .menu-button__line
+
+  .scroll-parallax
+    .scroll-parallax__layer
+    .scroll-parallax__layer
+    .scroll-parallax__layer
+    .scroll-parallax__layer
+    .scroll-parallax__layer
+    .scroll-parallax__layer
+    .scroll-parallax__layer
+    .scroll-parallax__layer
+    .scroll-parallax__layer
+    .scroll-parallax__layer
+
+
+  block header
+      
